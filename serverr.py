@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7361442850:AAGO4iS8fADKxvOG4PtBuLdOCdKjVbDECgo')
+bot = telebot.TeleBot('6658218258:AAEOpdD2qJwrRX5jxSuMNOOjQKqFS8WhcHE')
 
 # Admin user IDs
-admin_id = {"5904211070"}
+admin_id = {"1368975921"}
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -242,7 +242,7 @@ def handle_bgmi(message):
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
-            response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
+            response = "✅ Usage :- /bgmi <target> <port> <time> @MTMANGERR"  # Updated command syntax
     else:
         response = " You Are Not Authorized To Use This Command ."
 
@@ -296,7 +296,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.Dm: @Charan_Ddos
+    response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.Dm: @MTMANGERR
 🤖Try To Run This Command : /help 
 '''
     bot.reply_to(message, response)
@@ -325,7 +325,7 @@ Pr-ice List💸 :
 Day-->100 Rs
 Week-->400 Rs
 Month-->800 Rs
-Dm: @Charan_Ddos
+Dm: @MTMANGERR
 '''
     bot.reply_to(message, response)
 
